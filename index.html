@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Никита Малинин — системный администратор и инфраструктурный инженер. Поддержка IT-инфраструктуры малого бизнеса: Windows Server, Linux, MikroTik, VPN, виртуализация, автоматизация.">
+  <meta name="theme-color" content="#0b1020">
+  <meta property="og:title" content="Никита Малинин — Infrastructure Engineer">
+  <meta property="og:description" content="Сервера, сеть, удалённый доступ, мониторинг и автоматизация для малого бизнеса.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/photo.jpg">
+  <title>Никита Малинин · Infrastructure Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="page-load">
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <a class="skip-link" href="#content">Перейти к контенту</a>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="На главную">
+        <span class="brand__mark">&lt;NM /&gt;</span>
+      </a>
+
+      <nav class="nav desktop-nav" aria-label="Основная навигация">
+        <a href="#about" data-i18n="navAbout">Обо мне</a>
+        <a href="#cases" data-i18n="navCases">Кейсы</a>
+        <a href="#stack" data-i18n="navStack">Стек</a>
+        <a href="services.html" data-i18n="navServices">Услуги</a>
+        <a href="#contacts" data-i18n="navContacts">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="toggle" id="themeToggle" aria-label="Переключить тему">
+          <span class="toggle__track"><span class="toggle__thumb"></span></span>
+        </button>
+        <button class="lang-switch" id="langToggle" aria-label="Switch language">EN</button>
+        <a class="btn btn--primary desktop-only" href="#contacts" data-i18n="heroCtaPrimary">Обсудить задачу</a>
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#about" data-i18n="navAbout">Обо мне</a>
+      <a href="#cases" data-i18n="navCases">Кейсы</a>
+      <a href="#stack" data-i18n="navStack">Стек</a>
+      <a href="services.html" data-i18n="navServices">Услуги</a>
+      <a href="#contacts" data-i18n="navContacts">Контакты</a>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero section">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <div class="hero__pills">
+            <span class="pill" data-i18n="pill1">Infrastructure Engineer</span>
+            <span class="pill" data-i18n="pill2">Windows + Linux</span>
+            <span class="pill pill--ghost" data-i18n="pill3">RU / EN</span>
+          </div>
+
+          <h1 class="hero__title" data-i18n="heroTitle">Никита Малинин</h1>
+          <p class="hero__subtitle" data-i18n="heroSubtitle">Системный администратор и инфраструктурный инженер для малого бизнеса, офисов и проектных задач.</p>
+          <p class="hero__lead" data-i18n="heroLead">Беру на себя сервера, сеть, доступы, мониторинг и рутину, чтобы владелец бизнеса не думал про IT каждый день.</p>
+
+          <div class="hero__stats">
+            <div class="stat card-hover">
+              <span class="stat__num">3+ </span>
+              <span class="stat__label" data-i18n="stat1">года практики</span>
+            </div>
+            <div class="stat card-hover">
+              <span class="stat__num">до 50</span>
+              <span class="stat__label" data-i18n="stat2">пользователей в поддержке</span>
+            </div>
+            <div class="stat card-hover">
+              <span class="stat__num">2</span>
+              <span class="stat__label" data-i18n="stat3">филиала и до 10 серверов</span>
+            </div>
+          </div>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contacts" data-i18n="heroCtaPrimary">Обсудить задачу</a>
+            <a class="btn btn--secondary" href="services.html" data-i18n="heroCtaSecondary">Посмотреть услуги</a>
+            <a class="btn btn--ghost" href="resume.pdf" download data-i18n="heroCtaResume">Скачать резюме</a>
+          </div>
+
+          <div class="hero__quick card card--soft">
+            <div>
+              <div class="eyebrow" data-i18n="quickTitle1">Фокус</div>
+              <div class="quick__value" data-i18n="quickValue1">Windows Server, Linux, MikroTik, VPN, виртуализация, Zabbix</div>
+            </div>
+            <div>
+              <div class="eyebrow" data-i18n="quickTitle2">Подход</div>
+              <div class="quick__value" data-i18n="quickValue2">Сначала стабилизирую, потом довожу до аккуратного и устойчивого решения</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal-delay">
+          <div class="portrait-wrap card-hover">
+            <div class="portrait-glow"></div>
+            <img src="assets/photo.jpg" alt="Никита Малинин" class="portrait">
+          </div>
+          <div class="floating-card floating-card--one card-hover">
+            <span class="eyebrow" data-i18n="float1Title">Что беру на себя</span>
+            <strong data-i18n="float1Text">Сеть, доступы, серверы, мониторинг, автоматизацию и документацию</strong>
+          </div>
+          <div class="floating-card floating-card--two card-hover">
+            <span class="eyebrow" data-i18n="float2Title">Для кого</span>
+            <strong data-i18n="float2Text">Малый бизнес, аутсорс-офисы, проектная работа</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact reveal" id="about">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow" data-i18n="aboutEyebrow">Обо мне</span>
+          <h2 data-i18n="aboutTitle">Молодой, ровный и вменяемый инженер, который любит порядок в инфраструктуре.</h2>
+          <p data-i18n="aboutText">Мне нравится момент, когда после долгой настройки сервер запускается как надо: без хаоса, с понятной схемой, с документацией и нормальным запасом по стабильности. Я не люблю тушить пожары бесконечно. Мне ближе сделать так, чтобы система работала предсказуемо, а типовые проблемы решались быстро.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card card-hover">
+            <h3 data-i18n="aboutCard1Title">Чем полезен</h3>
+            <p data-i18n="aboutCard1Text">Могу в соло закрывать IT-инфраструктуру небольшого бизнеса: рабочие места, домен, серверы, сеть, удалённый доступ, бэкапы, мониторинг и техподдержку.</p>
+          </article>
+          <article class="card card-hover">
+            <h3 data-i18n="aboutCard2Title">Как работаю</h3>
+            <p data-i18n="aboutCard2Text">В аврале сначала быстро возвращаю рабочее состояние, потом разбираю причину, делаю нормальное решение и фиксирую это в документации.</p>
+          </article>
+          <article class="card card-hover">
+            <h3 data-i18n="aboutCard3Title">Что ценю</h3>
+            <p data-i18n="aboutCard3Text">Стабильность, удобство пользователей, красоту решений и автоматизацию. Безопасность и бюджет держу в голове всегда, но без фанатизма ради галочки.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="cases">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow" data-i18n="casesEyebrow">Кейсы</span>
+          <h2 data-i18n="casesTitle">Несколько задач, которые уже можно показывать без воды</h2>
+          <p data-i18n="casesText">Не красивые слова, а понятные истории: где был риск, что именно сделал и какой получился результат.</p>
+        </div>
+
+        <div class="cases-grid">
+          <article class="case card card-hover">
+            <div class="case__meta" data-i18n="case1Meta">ООО «Доктрина» · инфраструктура медцентра</div>
+            <h3 data-i18n="case1Title">Поддержка IT-инфраструктуры в одиночку</h3>
+            <p data-i18n="case1Text">Сопровождение рабочих мест, Active Directory, Windows Server, 1С, MS SQL, сети, периферии и удалённого доступа для офиса и филиалов.</p>
+            <ul>
+              <li data-i18n="case1Point1">Навёл порядок в учётках, доступах и типовых настройках</li>
+              <li data-i18n="case1Point2">Снизил ручную рутину через скрипты и шаблоны</li>
+              <li data-i18n="case1Point3">Сделал инфраструктуру более предсказуемой и спокойной для бизнеса</li>
+            </ul>
+          </article>
+
+          <article class="case card card-hover">
+            <div class="case__meta" data-i18n="case2Meta">Проектная работа · Pilot-BIM</div>
+            <h3 data-i18n="case2Title">Пилотное развёртывание среды для удалённой команды</h3>
+            <p data-i18n="case2Text">Развернул серверную часть, интегрировал систему с AD/LDAP, настроил защищённый удалённый доступ и подготовил клиентские рабочие места.</p>
+            <ul>
+              <li data-i18n="case2Point1">Собрал понятную схему входа и доступов</li>
+              <li data-i18n="case2Point2">Автоматизировал VPN-подключения через PowerShell</li>
+              <li data-i18n="case2Point3">Подготовил документацию для быстрого онбординга пользователей</li>
+            </ul>
+          </article>
+
+          <article class="case card card-hover">
+            <div class="case__meta" data-i18n="case3Meta">Сеть и доступы</div>
+            <h3 data-i18n="case3Title">Безопасный удалённый доступ и сегментация сети</h3>
+            <p data-i18n="case3Text">Настройка MikroTik, VLAN, WireGuard/VPN и правил доступа так, чтобы рабочий и гостевой трафик не мешали друг другу.</p>
+            <ul>
+              <li data-i18n="case3Point1">Разделил трафик по сегментам</li>
+              <li data-i18n="case3Point2">Организовал стабильный доступ к ресурсам извне</li>
+              <li data-i18n="case3Point3">Сделал схему понятнее для дальнейшей поддержки</li>
+            </ul>
+          </article>
+
+          <article class="case card card-hover">
+            <div class="case__meta" data-i18n="case4Meta">Мониторинг и автоматизация</div>
+            <h3 data-i18n="case4Title">Zabbix и рутинные скрипты вместо вечной ручной работы</h3>
+            <p data-i18n="case4Text">Развернул мониторинг на Linux, настроил базовые метрики и алерты, а повторяющиеся действия вынес в PowerShell/Python-скрипты.</p>
+            <ul>
+              <li data-i18n="case4Point1">Проблемы стали видны раньше, чем о них писал пользователь</li>
+              <li data-i18n="case4Point2">Сократилось время реакции на типовые инциденты</li>
+              <li data-i18n="case4Point3">Появилась база для масштабирования без хаоса</li>
+            </ul>
+          </article>
+
+          <article class="case card card-hover">
+            <div class="case__meta" data-i18n="case5Meta">Веб и интеграции</div>
+            <h3 data-i18n="case5Title">Сайт с нуля, SEO и уведомления в Telegram / почту</h3>
+            <p data-i18n="case5Text">Собрал сайт по блокам, улучшил структуру и базовую SEO-подачу, подключил форму с уведомлениями и сделал ресурс полезнее для бизнеса.</p>
+            <ul>
+              <li data-i18n="case5Point1">Сайт стал работать как реальный канал заявок</li>
+              <li data-i18n="case5Point2">Без тяжёлого стека и лишних затрат</li>
+              <li data-i18n="case5Point3">Техническая часть осталась понятной и поддерживаемой</li>
+            </ul>
+          </article>
+
+          <article class="case card case--accent card-hover">
+            <div class="case__meta" data-i18n="case6Meta">Pet-projects</div>
+            <h3 data-i18n="case6Title">MESHgate и User Friendly VPN</h3>
+            <p data-i18n="case6Text">Развиваю идеи вокруг удобного сетевого управления и понятных VPN-решений. Часть вещей пока в разработке, но логика уже инженерная: меньше боли, меньше ручных действий, больше предсказуемости.</p>
+            <a class="inline-link" href="https://github.com/CPUadmin?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="stack">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow" data-i18n="stackEyebrow">Стек</span>
+          <h2 data-i18n="stackTitle">Технологии и зоны ответственности</h2>
+        </div>
+
+        <div class="stack-grid">
+          <article class="card card-hover">
+            <h3 data-i18n="stack1Title">Серверы и сервисы</h3>
+            <p>Windows Server 2012/2016/2019, Active Directory, 1С, MS SQL, Linux, Docker</p>
+          </article>
+          <article class="card card-hover">
+            <h3 data-i18n="stack2Title">Сеть</h3>
+            <p>MikroTik, VLAN, NAT, DHCP, Firewall, WireGuard, VPN, bridge, базовая сегментация и доступы</p>
+          </article>
+          <article class="card card-hover">
+            <h3 data-i18n="stack3Title">Виртуализация</h3>
+            <p>VMware, Hyper-V, Proxmox: создание ВМ, снапшоты, бэкапы, миграции, базовая сетевая настройка</p>
+          </article>
+          <article class="card card-hover">
+            <h3 data-i18n="stack4Title">Мониторинг</h3>
+            <p>Zabbix, логирование, базовые алерты, контроль доступности сервисов</p>
+          </article>
+          <article class="card card-hover">
+            <h3 data-i18n="stack5Title">Автоматизация</h3>
+            <p>PowerShell, Python, bash с документацией и здравым смыслом</p>
+          </article>
+          <article class="card card-hover">
+            <h3 data-i18n="stack6Title">Web / Support</h3>
+            <p>Tilda, SEO basics, интеграции с Telegram и почтой, L2/L3 поддержка пользователей</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="highlight-grid">
+          <article class="highlight card card-hover">
+            <span class="section__eyebrow" data-i18n="valuesEyebrow">Ценности</span>
+            <h3 data-i18n="valuesTitle">Что для меня важнее всего</h3>
+            <ol class="ordered-list">
+              <li data-i18n="values1">Стабильность</li>
+              <li data-i18n="values2">Удобство пользователей</li>
+              <li data-i18n="values3">Красота решений</li>
+              <li data-i18n="values4">Автоматизация</li>
+              <li data-i18n="values5">Безопасность</li>
+              <li data-i18n="values6">Экономия бюджета</li>
+            </ol>
+          </article>
+          <article class="highlight card card-hover">
+            <span class="section__eyebrow" data-i18n="processEyebrow">Процесс</span>
+            <h3 data-i18n="processTitle">Как выглядит моя работа в нормальной схеме</h3>
+            <div class="steps">
+              <div><strong>01.</strong> <span data-i18n="process1">Стабилизирую ситуацию</span></div>
+              <div><strong>02.</strong> <span data-i18n="process2">Разбираю первопричину</span></div>
+              <div><strong>03.</strong> <span data-i18n="process3">Делаю устойчивое решение</span></div>
+              <div><strong>04.</strong> <span data-i18n="process4">Фиксирую в документации и шаблонах</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contacts">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow" data-i18n="contactsEyebrow">Контакты</span>
+          <h2 data-i18n="contactsTitle">Готов к работе, проектам и вменяемым предложениям</h2>
+          <p data-i18n="contactsText">Если нужен человек, который может аккуратно закрывать инфраструктурные задачи и не теряться в аврале, пиши.</p>
+        </div>
+
+        <div class="contacts-grid">
+          <a class="contact-card card-hover" href="https://t.me/fakemane2" target="_blank" rel="noopener">
+            <span class="eyebrow">Telegram</span>
+            <strong>@fakemane2</strong>
+          </a>
+          <a class="contact-card card-hover" href="mailto:fakemane5@yandex.ru">
+            <span class="eyebrow" data-i18n="contactEmail">Почта</span>
+            <strong>fakemane5@yandex.ru</strong>
+          </a>
+          <button class="contact-card card-hover copy-card" data-copy="+79687232092">
+            <span class="eyebrow" data-i18n="contactPhone">Телефон</span>
+            <strong>+7 (968) 723-20-92</strong>
+          </button>
+          <a class="contact-card card-hover" href="https://github.com/CPUadmin?tab=repositories" target="_blank" rel="noopener">
+            <span class="eyebrow">GitHub</span>
+            <strong>CPUadmin</strong>
+          </a>
+          <a class="contact-card card-hover" href="https://hh.ru/resume/e6f095caff0b1b00050039ed1f665975586564" target="_blank" rel="noopener">
+            <span class="eyebrow">HH.ru</span>
+            <strong data-i18n="contactResume">Резюме и опыт</strong>
+          </a>
+          <a class="contact-card card-hover" href="resume.pdf" download>
+            <span class="eyebrow" data-i18n="contactPdf">PDF</span>
+            <strong data-i18n="contactDownload">Скачать резюме</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Никита Малинин</p>
+      <p data-i18n="footerText">Сайт-визитка инфраструктурного инженера</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Скопировано</div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
